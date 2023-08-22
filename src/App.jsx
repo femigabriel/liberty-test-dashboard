@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-        
        <Layout title="Analytics dashboard">  
          <Routes>     
         <Route path="/" element={ <Dashboard />} />    

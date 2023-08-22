@@ -7,18 +7,8 @@ import {
   UsergroupAddOutlined,
 } from "@ant-design/icons";
 import { AuthList } from "../services/Services";
-const bellIcons = "./icons/bellIcons.svg";
 import type { DrawerProps, MenuProps } from "antd";
 import { Drawer, Dropdown } from "antd";
-import HomeIcon from "../svgs/HomeIcon";
-import DashboardIcon from "../svgs/DashboardIcons";
-import UsersIcon from "../svgs/UsersIcons";
-import LogIcon from "../svgs/LogIcon";
-import PurseIcon from "../svgs/PurseIcon";
-import SettingsIcon from "../svgs/SettingIcon";
-import RequesIcon from "../svgs/RequestIcon";
-import DarkModeIcon from "../svgs/DarkModeIcon";
-import DeviceIcon from "../svgs/DeviceIcon";
 import { CustomLink } from "./Sidebar";
 
 export const Headers = (props: AuthList) => {

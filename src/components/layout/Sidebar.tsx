@@ -158,7 +158,7 @@ export const Sidebar = ({ to, children, ...props }) => {
           {menuB?.map((list: any, index) => {
             return (
               <CustomLink to={list.link} key={index}>
-                <div className="flex justify-between">
+                <div className="flex justify-between py-2">
                   <div className="flex">
                     <span className="px-3 icon">{list.icon}</span>
                     <span className="tracking-[-0.011em]">{list.title}</span>
@@ -175,7 +175,7 @@ export const Sidebar = ({ to, children, ...props }) => {
           {menuC?.map((list: any, index) => {
             return (
               <CustomLink to={list.link} key={index}>
-                <div className="flex justify-between">
+                <div className="flex justify-between py-2">
                   <div className="flex">
                     <span className="px-3 icon">{list.icon}</span>
                     <span className="tracking-[-0.011em]">{list.title}</span>
