@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Layout } from "../src/components/layout/Layout";
-
+import { Route, Routes } from "react-router-dom"
 import './App.css'
 import { Dashboard } from "../src/components/dashboard/Dashboard";
 
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-          {/* <head>
+        {/* <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -25,9 +25,11 @@ function App() {
           rel="stylesheet"
         ></link>
       </head> */}
-    <Layout title="Analytics dashboard">
-        <Dashboard />
-      </Layout>
+       <Layout title="Analytics dashboard">  
+         <Routes>     
+        <Route path="/" element={ <Dashboard />} />    
+      </Routes>
+      </Layout>  
     </>
   )
 }

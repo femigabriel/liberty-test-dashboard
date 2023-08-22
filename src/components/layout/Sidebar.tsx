@@ -1,6 +1,7 @@
 import React from "react";
 import { MenuBarist } from "../services/Services";
 import ArrowIcon from "../svgs/ArrowIcon";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const menuA: MenuBarist[] = [
   {
@@ -129,7 +130,10 @@ const menuC: MenuBarist[] = [
     link: "/performance",
   },
 ];
-export const Sidebar = () => {
+export const Sidebar = ({ to, children, ...props }) => {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
   return (
     <div className="sidebar shadow-md px-5">
       <div className="pt-10 menu-list ">
@@ -138,62 +142,50 @@ export const Sidebar = () => {
             <h3 className=" text-[32px] font-bold ">Paybox</h3>
             <p>by LiberyPay</p>
           </div>
-          <nav className="mb-2">
+          <nav className="mb-7">
             {menuA?.map((list: any, index) => {
               return (
-                <li
-                  key={index}
-                  // href={list.link}
-                >
-                  <a
-                    href="http://"
-                    className="  text-[14px] py-3 font-medium cursor-pointer flex mb-3"
-                  >
+                <CustomLink to={list.link} key={index}>
+                  <div className="flex">
                     <span className="px-3">{list.icon}</span>
                     <span className="tracking-[-0.011em]">{list.title}</span>
-                  </a>
-                </li>
+                  </div>
+                </CustomLink>
               );
             })}
           </nav>
         </div>
       </div>
       <div className="menu-list mt-5 ">
-        <nav className="">
+        <nav className="mb-5">
           {menuB?.map((list: any, index) => {
             return (
-              <li key={index} className="mb-2">
-                <a
-                  className="  text-[14px] py-3 font-medium cursor-pointer justify-between flex mb-3 "
-                  href="http://"
-                >
+              <CustomLink to={list.link} key={index}>
+                <div className="flex justify-between">
                   <div className="flex">
                     <span className="px-3 icon">{list.icon}</span>
                     <span className="tracking-[-0.011em]">{list.title}</span>
                   </div>
                   <ArrowIcon />
-                </a>
-              </li>
+                </div>
+              </CustomLink>
             );
           })}
         </nav>
       </div>
       <div className="menu-list mt-5 ">
-        <nav className="mb-2">
+        <nav className="mb-5">
           {menuC?.map((list: any, index) => {
             return (
-              <li key={index}>
-                <a
-                  href="http://"
-                  className="text-[14px] py-3 font-medium cursor-pointer justify-between flex mb-3"
-                >
+              <CustomLink to={list.link} key={index}>
+                <div className="flex justify-between">
                   <div className="flex">
                     <span className="px-3 icon">{list.icon}</span>
                     <span className="tracking-[-0.011em]">{list.title}</span>
                   </div>
                   <ArrowIcon />
-                </a>
-              </li>
+                </div>
+              </CustomLink>
             );
           })}
         </nav>
@@ -201,3 +193,16 @@ export const Sidebar = () => {
     </div>
   );
 };
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  );
+}

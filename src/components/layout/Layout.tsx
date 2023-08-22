@@ -1,6 +1,7 @@
 import React, { Children } from "react";
 import { Sidebar } from "./Sidebar";
 import { Headers } from "./Headers";
+import { Route, Routes } from "react-router-dom";
 
 interface Props {
   children: React.ReactNode;
@@ -25,6 +26,7 @@ export const Layout = ({ children, title, description }: Props) => {
           </div>
         </div>
       </div>
+   
     </div>
   );
 };
