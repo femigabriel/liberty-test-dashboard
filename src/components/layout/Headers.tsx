@@ -19,7 +19,7 @@ import SettingsIcon from "../svgs/SettingIcon";
 import RequesIcon from "../svgs/RequestIcon";
 import DarkModeIcon from "../svgs/DarkModeIcon";
 import DeviceIcon from "../svgs/DeviceIcon";
-
+import { CustomLink } from "./Sidebar";
 
 export const Headers = (props: AuthList) => {
   const [open, setOpen] = useState(false);
@@ -32,66 +32,126 @@ export const Headers = (props: AuthList) => {
   const onClose = () => {
     setOpen(false);
   };
-
+  // Mobile menu items
   const menu = [
     {
       id: 0,
       title: " Home",
-      icon: <HomeIcon />,
+      icon: (
+        <img
+          src="./assets/icons/home.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/home",
     },
     {
       id: 1,
       title: "Analytics Dashboard",
-      icon: <DashboardIcon />,
+      icon: (
+        <img
+          src="./assets/icons/category-2.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/",
     },
     {
       id: 2,
       title: "Personal",
-      icon: <SettingsIcon />,
+      icon: (
+        <img
+          src="./assets/icons/strongbox.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/personal",
     },
     {
       id: 3,
       title: "Sales Hub",
-      icon: <RequesIcon />,
+      icon: (
+        <img
+          src="./assets/icons/shop.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/sales",
     },
     {
       id: 4,
       title: "Talent Management",
-      icon: <DarkModeIcon />,
+      icon: (
+        <img
+          src="./assets/icons/3dcube.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/talent",
     },
     {
       id: 5,
       title: "Spend Management",
-      icon: <DeviceIcon />,
+      icon: (
+        <img
+          src="./assets/icons/card-edit.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/spend",
     },
     {
       id: 6,
       title: "Cards",
-      icon: <DarkModeIcon />,
+      icon: (
+        <img
+          src="./assets/icons/cards.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/card",
     },
     {
       id: 7,
       title: "Leaderboard",
-      icon: <UsersIcon />,
+      icon: (
+        <img
+          src="./assets/icons/medal-star.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/leaderboard",
     },
     {
       id: 8,
       title: "Profile & Settings",
-      icon: <LogIcon />,
+      icon: (
+        <img
+          src="./assets/icons/security-user.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/profile",
     },
     {
       id: 9,
       title: "Bank performance",
-      icon: <PurseIcon />,
+      icon: (
+        <img
+          src="./assets/icons/radar.svg"
+          className="cursor-pointer"
+          alt="bell"
+        />
+      ),
       link: "/performance",
     },
   ];
@@ -102,7 +162,7 @@ export const Headers = (props: AuthList) => {
       key: "1",
       label: (
         <a href="/" className="login-link flex">
-          <img src="./assets/icons/downArrowIcon.svg" className="mt-2" />
+          <img src="./assets/icons/category-2.svg" className="mt-2" />
           <span className="text-[16px] font-semibold mx-3 mt-2">
             Analytics Dashboard
           </span>
@@ -184,14 +244,12 @@ export const Headers = (props: AuthList) => {
         <nav className="mobile-drawer">
           {menu?.map((list: any, index) => {
             return (
-              <a
-                key={index}
-                href={list.link}
-                className="text-[14px] py-2 font-medium cursor-pointer flex mb-3"
-              >
-                <span className="px-3 icon">{list.icon}</span>
-                <span className="tracking-[-0.011em]">{list.title}</span>
-              </a>
+              <CustomLink to={list.link} key={index}>
+                <div className="flex mb-3">
+                  <span className="px-3 icon">{list.icon}</span>
+                  <span className="tracking-[-0.011em]">{list.title}</span>
+                </div>
+              </CustomLink>
             );
           })}
         </nav>
