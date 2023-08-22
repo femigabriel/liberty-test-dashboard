@@ -135,10 +135,10 @@ export const Sidebar = () => {
       <div className="pt-10 menu-list ">
         <div>
           <div className="mb-10 sidebar-title">
-            <h3 className=" text-[32px] font-bold  ">Paybox</h3>
+            <h3 className=" text-[32px] font-bold ">Paybox</h3>
             <p>by LiberyPay</p>
           </div>
-          <nav className="mb-5">
+          <nav className="mb-2">
             {menuA?.map((list: any, index) => {
               return (
                 <li
@@ -179,13 +179,13 @@ export const Sidebar = () => {
         </nav>
       </div>
       <div className="menu-list mt-5 ">
-        <nav className="">
+        <nav className="mb-2">
           {menuC?.map((list: any, index) => {
             return (
               <li key={index}>
                 <a
                   href="http://"
-                  className="  text-[14px] py-3 font-medium cursor-pointer justify-between flex mb-3"
+                  className="text-[14px] py-3 font-medium cursor-pointer justify-between flex mb-3"
                 >
                   <div className="flex">
                     <span className="px-3 icon">{list.icon}</span>
