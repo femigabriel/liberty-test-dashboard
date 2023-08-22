@@ -102,7 +102,7 @@ export const Headers = (props: AuthList) => {
       key: "1",
       label: (
         <a href="/" className="login-link flex">
-          <img src="../src/assets/icons/downArrowIcon.svg" className="mt-2" />
+          <img src="./assets/icons/downArrowIcon.svg" className="mt-2" />
           <span className="text-[16px] font-semibold mx-3 mt-2">
             Analytics Dashboard
           </span>
@@ -134,14 +134,14 @@ export const Headers = (props: AuthList) => {
           </div>
           <div className="flex rounded-full cursor-pointer">
             <img
-              src="../src/assets/icons/bellIcons.svg"
+              src="./assets/icons/notificationIcon.svg"
               className="cursor-pointer mt-3"
               alt="bell"
             />
             <Dropdown menu={{ items }} placement="bottomRight" arrow>
               <div className="flex justify-between mt-1">
                 <img
-                  src="../src/assets/images/profile.jpg"
+                  src="./assets/images/profile.jpg"
                   alt="profile-img"
                   className="w-[40px] mt-2 h-[40px] mx-3 cursor-pointer rounded-full"
                 />

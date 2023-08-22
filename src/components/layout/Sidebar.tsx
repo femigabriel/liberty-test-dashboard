@@ -8,7 +8,7 @@ const menuA: MenuBarist[] = [
     title: " Home",
     icon: (
       <img
-        src="../src/assets/icons/home.svg"
+        src="./assets/icons/home.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -20,7 +20,7 @@ const menuA: MenuBarist[] = [
     title: "Analytics Dashboard",
     icon: (
       <img
-        src="../src/assets/icons/category-2.svg"
+        src="./assets/icons/category-2.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -35,7 +35,7 @@ const menuB: MenuBarist[] = [
     title: "Personal",
     icon: (
       <img
-        src="../src/assets/icons/strongbox.svg"
+        src="./assets/icons/strongbox.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -47,7 +47,7 @@ const menuB: MenuBarist[] = [
     title: "Sales Hub",
     icon: (
       <img
-        src="../src/assets/icons/shop.svg"
+        src="./assets/icons/shop.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -59,7 +59,7 @@ const menuB: MenuBarist[] = [
     title: "Talent Management",
     icon: (
       <img
-        src="../src/assets/icons/3dcube.svg"
+        src="./assets/icons/3dcube.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -71,7 +71,7 @@ const menuB: MenuBarist[] = [
     title: "Spend Management",
     icon: (
       <img
-        src="../src/assets/icons/card-edit.svg"
+        src="./assets/icons/card-edit.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -83,7 +83,7 @@ const menuB: MenuBarist[] = [
     title: "Cards",
     icon: (
       <img
-        src="../src/assets/icons/cards.svg"
+        src="./assets/icons/cards.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -97,7 +97,7 @@ const menuC: MenuBarist[] = [
     title: "Leaderboard",
     icon: (
       <img
-        src="../src/assets/icons/medal-star.svg"
+        src="./assets/icons/medal-star.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -109,7 +109,7 @@ const menuC: MenuBarist[] = [
     title: "Profile & Settings",
     icon: (
       <img
-        src="../src/assets/icons/security-user.svg"
+        src="./assets/icons/security-user.svg"
         className="cursor-pointer"
         alt="bell"
       />
@@ -121,7 +121,7 @@ const menuC: MenuBarist[] = [
     title: "Bank performance",
     icon: (
       <img
-        src="../src/assets/icons/radar.svg"
+        src="./assets/icons/radar.svg"
         className="cursor-pointer"
         alt="bell"
       />

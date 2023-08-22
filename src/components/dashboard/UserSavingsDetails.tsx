@@ -37,8 +37,7 @@ export const UserSavingsDetails = () => {
             <div className="mt-3 flex cursor-pointer">
               <span className="">View details</span>
               <img
-                src="../src/assets/icons/forwardArrowIcon.svg"
-                // src={forwardarrowIcon   }
+                src="./assets/icons/forwardArrowIcon.svg"
                 alt=""
               />
             </div>
@@ -54,17 +53,17 @@ export const WalletBalanceCard = () => {
       <div className="wallet_card">
         <div className="flex sliders">
           <img
-            src="../src/assets/icons/slides-2.svg"
+            src="./assets/icons/slides-2.svg"
             alt="slides-1"
             className="s relative left-[30px] bottom-[15px]"
           />
           <img
-            src="../src/assets/icons/slides-3.svg"
+            src="./assets/icons/slides-3.svg"
             className=" relative left-[25px] bottom-[6px]"
             alt=""
           />
           <img
-            src="../src/assets/icons/slides-1.svg"
+            src="./assets/icons/slides-1.svg"
             className="relative left-[-40px] bottom-[-2px]"
             alt=""
           />

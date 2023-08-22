@@ -103,7 +103,7 @@ export const TransactionComparativeChart = () => {
         </div>
         <div className="flex lg:justify-center">
           <img
-            src="../src/assets/icons/bar-chat.svg"
+            src="./assets/icons/bar-chat.svg"
             className=" cursor-pointer lg:w-[170px] lg:h-[171px]"
             alt="profile-image"
           />
