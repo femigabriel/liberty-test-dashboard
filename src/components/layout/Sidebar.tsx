@@ -131,9 +131,6 @@ const menuC: MenuBarist[] = [
   },
 ];
 export const Sidebar = ({ to, children, ...props }) => {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
   return (
     <div className="sidebar shadow-md px-5">
       <div className="pt-10 menu-list ">
