@@ -89,14 +89,15 @@ body::-webkit-scrollbar-thumb {
 }
 .sidebar-title h3 {
   font-size: 32px;
-  font-weight: 700;
-
+  /* font-weight: 700; */
+  font-family: "Clash Display", sans-serif;
   line-height: normal;
 }
 .sidebar-title p {
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+  font-family: "Clash Display", sans-serif;
 }
 .menu-list {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.2);

@@ -136,7 +136,7 @@ export const Sidebar = ({ to, children, ...props }) => {
       <div className="pt-10 menu-list ">
         <div>
           <div className="mb-10 sidebar-title">
-            <h3 className=" text-[32px] font-bold ">Paybox</h3>
+            <h3 className="font-extrabold">Paybox</h3>
             <p>by LiberyPay</p>
           </div>
           <nav className="mb-7">
