@@ -82,16 +82,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: #192749;
   width: 100%;
-  /* padding: 10px 0;
-  margin-bottom: 10px; */
 }
-.sidebar-title {
-  color: #fff;
-  font-family: "Clash Display", sans-serif;
-}
+
 .sidebar-title h3 {
   font-size: 32px;
-  /* font-weight: 700; */
   font-family: "Clash Display", sans-serif;
   line-height: normal;
 }
