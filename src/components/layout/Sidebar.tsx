@@ -144,10 +144,14 @@ export const Sidebar = () => {
                 <li
                   key={index}
                   // href={list.link}
-                  className="  text-[14px] py-3 font-medium cursor-pointer flex mb-3"
                 >
-                  <span className="px-3">{list.icon}</span>
-                  <span className="tracking-[-0.011em]">{list.title}</span>
+                  <a
+                    href="http://"
+                    className="  text-[14px] py-3 font-medium cursor-pointer flex mb-3"
+                  >
+                    <span className="px-3">{list.icon}</span>
+                    <span className="tracking-[-0.011em]">{list.title}</span>
+                  </a>
                 </li>
               );
             })}
@@ -158,15 +162,17 @@ export const Sidebar = () => {
         <nav className="">
           {menuB?.map((list: any, index) => {
             return (
-              <li
-                key={index}
-                className="  text-[14px] py-3 font-medium cursor-pointer flex justify-between mb-3"
-              >
-                <div className="flex">
-                  <span className="px-3 icon">{list.icon}</span>
-                  <span className="tracking-[-0.011em]">{list.title}</span>
-                </div>
-                <ArrowIcon />
+              <li key={index} className="mb-2">
+                <a
+                  className="  text-[14px] py-3 font-medium cursor-pointer justify-between flex mb-3 "
+                  href="http://"
+                >
+                  <div className="flex">
+                    <span className="px-3 icon">{list.icon}</span>
+                    <span className="tracking-[-0.011em]">{list.title}</span>
+                  </div>
+                  <ArrowIcon />
+                </a>
               </li>
             );
           })}
@@ -176,15 +182,17 @@ export const Sidebar = () => {
         <nav className="">
           {menuC?.map((list: any, index) => {
             return (
-              <li
-                key={index}
-                className="  text-[14px] py-3 font-medium cursor-pointer flex justify-between mb-3"
-              >
-                <div className="flex">
-                  <span className="px-3 icon">{list.icon}</span>
-                  <span className="tracking-[-0.011em]">{list.title}</span>
-                </div>
-                <ArrowIcon />
+              <li key={index}>
+                <a
+                  href="http://"
+                  className="  text-[14px] py-3 font-medium cursor-pointer justify-between flex mb-3"
+                >
+                  <div className="flex">
+                    <span className="px-3 icon">{list.icon}</span>
+                    <span className="tracking-[-0.011em]">{list.title}</span>
+                  </div>
+                  <ArrowIcon />
+                </a>
               </li>
             );
           })}

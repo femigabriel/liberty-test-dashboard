@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -36,14 +33,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #07112d;
 }
 
-li {
-  list-style-type: none;
-  color: #999;
-  font-size: 14px;
-  padding: 10px 20px;
-  cursor: pointer;
-  height: 40px;
-}
 .header {
   display: block;
 }
@@ -62,7 +51,17 @@ li {
   z-index: 1;
   display: block;
   color: #ffffff;
-  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+.sidebar li {
+  list-style-type: none;
+  font-size: 14px;
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  height: 40px;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -71,13 +70,14 @@ li {
   color: #ffffff;
   border-radius: 8px;
   background: #192749;
-  width: 224px;
+  /* width: 224px; */
+  width: 100%;
 }
 .sidebar a:hover {
   color: #ffffff;
   border-radius: 8px;
   background: #192749;
-  width: 224px;
+  width: 100%;
 }
 .sidebar-title {
   color: #fff;
