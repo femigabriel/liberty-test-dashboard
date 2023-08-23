@@ -64,7 +64,12 @@ export const WalletBalanceCard = () => {
           />
           <img
             src="./assets/icons/slides-1.svg"
-            className="relative left-[-40px] bottom-[-2px]"
+            className="relative left-[-50px] bottom-[-2px] "
+            alt=""
+          />
+             <img
+            src="./assets/icons/slides-4.svg"
+            className="slide-4	"
             alt=""
           />
         </div>
