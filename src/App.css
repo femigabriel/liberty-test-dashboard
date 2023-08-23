@@ -68,9 +68,12 @@
 }
 .savings_card span {
   color: #032282;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Nunito;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; 
   letter-spacing: 0.16px;
 }
 .savings_card button {
