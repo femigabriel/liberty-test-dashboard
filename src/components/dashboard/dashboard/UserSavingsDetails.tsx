@@ -1,6 +1,6 @@
 import React from "react";
 // import styles from "../../styles/dashboard.module.css";
-import Eyesicons from "../svgs/EyesIcon";
+import Eyesicons from "../../svgs/EyesIcon";
 const slide2 = "./icons/slides-2.svg";
 const slide1 = "./icons/slides-1.svg";
 const slide3 = "./icons/slides-3.svg";

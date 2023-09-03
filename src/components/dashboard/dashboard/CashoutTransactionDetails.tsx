@@ -1,6 +1,6 @@
 import React from "react";
 // import styles from "../../styles/dashboard.module.css";
-import DownIcon from "../svgs/DownIcon";
+import DownIcon from "../../svgs/DownIcon";
 
 const cashoutTransactionDetails = [
   {

@@ -14,7 +14,7 @@ const menuA: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/home",
+    link: "/",
   },
   {
     id: 2,
@@ -26,14 +26,14 @@ const menuA: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/",
+    link: "/dashboard",
   },
 ];
 
 const menuB: MenuBarist[] = [
   {
     id: 1,
-    title: "Personal",
+    title: "Workspace",
     icon: (
       <img
         src="./assets/icons/strongbox.svg"
@@ -41,11 +41,11 @@ const menuB: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/personal",
+    link: "/workspace",
   },
   {
     id: 2,
-    title: "Sales Hub",
+    title: "Clients",
     icon: (
       <img
         src="./assets/icons/shop.svg"
@@ -53,11 +53,11 @@ const menuB: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/sales",
+    link: "/clients",
   },
   {
     id: 3,
-    title: "Talent Management",
+    title: "Schedule Appointment",
     icon: (
       <img
         src="./assets/icons/3dcube.svg"
@@ -65,11 +65,11 @@ const menuB: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/talent",
+    link: "/schedule",
   },
   {
     id: 4,
-    title: "Spend Management",
+    title: "payment",
     icon: (
       <img
         src="./assets/icons/card-edit.svg"
@@ -77,11 +77,11 @@ const menuB: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/spend",
+    link: "/payment",
   },
   {
     id: 5,
-    title: "Cards",
+    title: "Task",
     icon: (
       <img
         src="./assets/icons/cards.svg"
@@ -89,7 +89,31 @@ const menuB: MenuBarist[] = [
         alt="bell"
       />
     ),
-    link: "/card",
+    link: "/task",
+  },
+  {
+    id: 6,
+    title: "Message",
+    icon: (
+      <img
+        src="./assets/icons/radar.svg"
+        className="cursor-pointer"
+        alt="bell"
+      />
+    ),
+    link: "/message",
+  },
+  {
+    id: 7,
+    title: "Reports",
+    icon: (
+      <img
+        src="./assets/icons/medal-star.svg"
+        className="cursor-pointer"
+        alt="bell"
+      />
+    ),
+    link: "/reports",
   },
 ];
 const menuC: MenuBarist[] = [
@@ -143,9 +167,9 @@ export const Sidebar = ({ to, children, ...props }) => {
             {menuA?.map((list: any, index) => {
               return (
                 <CustomLink to={list.link} key={index}>
-                  <div className="flex">
+                  <div className="flex py-2">
                     <span className="px-3">{list.icon}</span>
-                    <span className="tracking-[-0.011em]">{list.title}</span>
+                    <span className="tracking-[-0.011em] ">{list.title}</span>
                   </div>
                 </CustomLink>
               );
@@ -159,7 +183,7 @@ export const Sidebar = ({ to, children, ...props }) => {
             return (
               <CustomLink to={list.link} key={index}>
                 <div className="flex justify-between py-2">
-                  <div className="flex">
+                  <div className="flex ">
                     <span className="px-3 icon">{list.icon}</span>
                     <span className="tracking-[-0.011em]">{list.title}</span>
                   </div>
@@ -170,7 +194,7 @@ export const Sidebar = ({ to, children, ...props }) => {
           })}
         </nav>
       </div>
-      <div className="menu-list mt-5 ">
+      {/* <div className="menu-list mt-5 ">
         <nav className="mb-5">
           {menuC?.map((list: any, index) => {
             return (
@@ -186,7 +210,7 @@ export const Sidebar = ({ to, children, ...props }) => {
             );
           })}
         </nav>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -197,7 +221,7 @@ export function CustomLink({ to, children, ...props }) {
 
   return (
     <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
+      <Link to={to} {...props} className="">
         {children}
       </Link>
     </li>

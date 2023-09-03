@@ -65,6 +65,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 10px;
+  padding: 2px 0;
 }
 .sidebar .active {
   color: #ffffff;
@@ -74,8 +76,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin-bottom: 10px;
   display: flex;
+  justify-content: space-between;
   cursor: pointer;
-  padding: 10px 0;
 }
 .sidebar li:hover {
   color: #ffffff;
@@ -148,4 +150,8 @@ body::-webkit-scrollbar-thumb {
 .slides {
   position: relative;
   top: 100px;
+}
+.list:hover {
+  background-color: rgb(224 242 254);
+  border-left: 3px solid #032282;
 }

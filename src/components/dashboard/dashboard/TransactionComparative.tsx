@@ -1,7 +1,7 @@
 import React from "react";
 // import styles from "../../styles/dashboard.module.css";
-import DownIcon from "../svgs/DownIcon";
-import BarChat from "../svgs/BarChat";
+import DownIcon from "../../svgs/DownIcon";
+import BarChat from "../../svgs/BarChat";
 const barchat = "./images/bar-chat.png";
 const cashoutTransactionDetails = [
   {
