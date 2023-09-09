@@ -130,6 +130,11 @@
   right: 72px;
 }
 
+/* Payment Invoice Form select */
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 40px;
+}
+
 @media screen and (max-width: 860px) {
   .savings_card {
     width: 100%;

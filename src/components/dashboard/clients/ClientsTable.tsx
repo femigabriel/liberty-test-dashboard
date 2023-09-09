@@ -11,9 +11,7 @@ interface IProps {
   product: Product;
 }
 export const ClientsTable = ({ props }: any) => {
-  const [data, setData] =
-  //  useState<ResponseFetchUsers[]>([]);
-  useState<ResponseFetchUsers[]>(clientList);
+  const [data, setData] = useState<ResponseFetchUsers[]>(clientList);
   console.log(data);
 
   const addToData = (data: ResponseFetchUsers) => {
