@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import Link from "next/link";
 import { Input } from "antd";
-// import { useRouter } from "next/router";
+import { Link } from "react-router-dom";
 
 export default function SIgnInForm() {
   const [email, setEmail] = useState("");
@@ -59,9 +59,12 @@ export default function SIgnInForm() {
 
         <div>
           <button className="uppercase text-[white] bg-[#032282] h-[45px] my-5 w-full">
-            <a href="/dashboard" className="login-link">
+            {/* <a href="/dashboard" className="login-link">
               log in
-            </a>
+            </a> */}
+            <Link className="" to={"/dashboard"}>
+              log in
+            </Link>
           </button>
         </div>
       </form>
