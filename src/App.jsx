@@ -7,6 +7,7 @@ import { Signin } from './components/sign-in/Signin';
 import ClientsPage from './components/dashboard/clients/ClientsPage';
 import { Schedule } from './components/dashboard/schedule/Schedule';
 import { PaymentPage } from './components/dashboard/payment/PaymentPage';
+import { Tasks } from './components/dashboard/tasks/Tasks';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Route path="/clients" element={ <ClientsPage />} />     
         <Route path="/schedule" element={ <Schedule />} />      
         <Route path="/payment" element={ <PaymentPage />} />   
+        <Route path="/task" element={ <Tasks />} />   
       </Routes>
     </>
   )

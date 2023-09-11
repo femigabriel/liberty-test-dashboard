@@ -136,3 +136,12 @@ export const ClientListApi = [
     purpose: "Trading",
   },
 ];
+
+export type ResponseFetctTasks = {
+  [x: string]: any;
+  id: number;
+  page: string;
+  description: string;
+  start: string;
+  end: string;
+};
